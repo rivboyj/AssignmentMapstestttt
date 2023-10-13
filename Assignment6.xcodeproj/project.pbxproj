@@ -14,6 +14,15 @@
 		575500AE2AD78B76002FB4E9 /* Assignment6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500AD2AD78B76002FB4E9 /* Assignment6Tests.swift */; };
 		575500B82AD78B77002FB4E9 /* Assignment6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500B72AD78B77002FB4E9 /* Assignment6UITests.swift */; };
 		575500BA2AD78B77002FB4E9 /* Assignment6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500B92AD78B77002FB4E9 /* Assignment6UITestsLaunchTests.swift */; };
+		575500C92AD78D35002FB4E9 /* MainViewModel in Sources */ = {isa = PBXBuildFile; fileRef = 575500C82AD78D35002FB4E9 /* MainViewModel */; };
+		575500CF2AD7905C002FB4E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500CE2AD7905C002FB4E9 /* MapView.swift */; };
+		575500D12AD7963F002FB4E9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500D02AD7963F002FB4E9 /* MapViewModel.swift */; };
+		575500D62AD796F6002FB4E9 /* MarkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500D52AD796F6002FB4E9 /* MarkerViewModel.swift */; };
+		575500D92AD7971D002FB4E9 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500D82AD7971D002FB4E9 /* MarkerView.swift */; };
+		575500DE2AD797C9002FB4E9 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500DD2AD797C9002FB4E9 /* HistoryViewModel.swift */; };
+		575500E02AD797D5002FB4E9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500DF2AD797D5002FB4E9 /* HistoryView.swift */; };
+		575500E32AD7A7F0002FB4E9 /* MarkerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575500E22AD7A7F0002FB4E9 /* MarkerModel.swift */; };
+		57C5782B2AD9C30B0075C778 /* pushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5782A2AD9C30B0075C778 /* pushNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		575500B32AD78B77002FB4E9 /* Assignment6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		575500B72AD78B77002FB4E9 /* Assignment6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment6UITests.swift; sourceTree = "<group>"; };
 		575500B92AD78B77002FB4E9 /* Assignment6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		575500C82AD78D35002FB4E9 /* MainViewModel */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainViewModel; sourceTree = "<group>"; };
+		575500CE2AD7905C002FB4E9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		575500D02AD7963F002FB4E9 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		575500D52AD796F6002FB4E9 /* MarkerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerViewModel.swift; sourceTree = "<group>"; };
+		575500D82AD7971D002FB4E9 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		575500DD2AD797C9002FB4E9 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		575500DF2AD797D5002FB4E9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		575500E22AD7A7F0002FB4E9 /* MarkerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerModel.swift; sourceTree = "<group>"; };
+		57C5782A2AD9C30B0075C778 /* pushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pushNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +113,11 @@
 		5755009A2AD78B74002FB4E9 /* Assignment6 */ = {
 			isa = PBXGroup;
 			children = (
+				575500DA2AD797AC002FB4E9 /* History */,
+				575500D22AD796D2002FB4E9 /* Marker */,
+				575500CB2AD7903A002FB4E9 /* Map */,
+				575500CA2AD7901C002FB4E9 /* Main */,
 				5755009B2AD78B74002FB4E9 /* Assignment6App.swift */,
-				5755009D2AD78B74002FB4E9 /* ContentView.swift */,
 				5755009F2AD78B76002FB4E9 /* Assets.xcassets */,
 				575500A12AD78B76002FB4E9 /* Assignment6.entitlements */,
 				575500A22AD78B76002FB4E9 /* Preview Content */,
@@ -127,6 +148,116 @@
 				575500B92AD78B77002FB4E9 /* Assignment6UITestsLaunchTests.swift */,
 			);
 			path = Assignment6UITests;
+			sourceTree = "<group>";
+		};
+		575500C62AD78CCC002FB4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5755009D2AD78B74002FB4E9 /* ContentView.swift */,
+				57C5782A2AD9C30B0075C778 /* pushNotifications.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		575500C72AD78CD9002FB4E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				575500C82AD78D35002FB4E9 /* MainViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		575500CA2AD7901C002FB4E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				575500C62AD78CCC002FB4E9 /* View */,
+				575500C72AD78CD9002FB4E9 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		575500CB2AD7903A002FB4E9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				575500CD2AD79049002FB4E9 /* ViewModel */,
+				575500CC2AD79041002FB4E9 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		575500CC2AD79041002FB4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				575500CE2AD7905C002FB4E9 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		575500CD2AD79049002FB4E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				575500D02AD7963F002FB4E9 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		575500D22AD796D2002FB4E9 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				575500E12AD7A7E1002FB4E9 /* Model */,
+				575500D42AD796E0002FB4E9 /* ViewModel */,
+				575500D32AD796DC002FB4E9 /* View */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
+		575500D32AD796DC002FB4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				575500D82AD7971D002FB4E9 /* MarkerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		575500D42AD796E0002FB4E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				575500D52AD796F6002FB4E9 /* MarkerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		575500DA2AD797AC002FB4E9 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				575500DC2AD797BA002FB4E9 /* ViewModel */,
+				575500DB2AD797B5002FB4E9 /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		575500DB2AD797B5002FB4E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				575500DF2AD797D5002FB4E9 /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		575500DC2AD797BA002FB4E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				575500DD2AD797C9002FB4E9 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		575500E12AD7A7E1002FB4E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				575500E22AD7A7F0002FB4E9 /* MarkerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +391,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5755009E2AD78B74002FB4E9 /* ContentView.swift in Sources */,
+				575500E32AD7A7F0002FB4E9 /* MarkerModel.swift in Sources */,
+				575500D92AD7971D002FB4E9 /* MarkerView.swift in Sources */,
+				57C5782B2AD9C30B0075C778 /* pushNotifications.swift in Sources */,
+				575500D12AD7963F002FB4E9 /* MapViewModel.swift in Sources */,
+				575500CF2AD7905C002FB4E9 /* MapView.swift in Sources */,
+				575500C92AD78D35002FB4E9 /* MainViewModel in Sources */,
+				575500D62AD796F6002FB4E9 /* MarkerViewModel.swift in Sources */,
 				5755009C2AD78B74002FB4E9 /* Assignment6App.swift in Sources */,
+				575500E02AD797D5002FB4E9 /* HistoryView.swift in Sources */,
+				575500DE2AD797C9002FB4E9 /* HistoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
